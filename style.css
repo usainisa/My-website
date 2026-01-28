@@ -2,7 +2,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+body{
+ max-width:600px;
+ margin:auto;
+}
 /* Body */
 body {
   background: linear-gradient(135deg, #e0f7fa, #a7ffeb);
@@ -77,7 +80,21 @@ button:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
+button {
+  padding: 12px 25px;
+  background: #25D366; /* WhatsApp green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
 
+button:hover {
+  background: #128C7E;
+  transform: scale(1.1);
+  cursor: pointer;
+}
 /* Skills */
 .skills {
   display: flex;
@@ -155,4 +172,18 @@ footer a:hover {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+section{
+  padding:40px;
+  margin:20px;
+  background:#f2f2f2;
+  border-radius:10px;
+}
+section{
+ animation: fade 1s ease;
+}
+
+@keyframes fade{
+ from{opacity:0;}
+ to{opacity:1;}
 }

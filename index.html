@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Website</title>
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+</head>
+<img src="profile.jpg" alt="Profile Photo" class="profile">
+<h2>About Me</h2>
+<p>
+<h2 id="skills" class="fade-in">My Skills</h2>
+<div class="skills fade-in">
+  <div class="skill">HTML</div>
+  <div class="skill">CSS</div>
+  <div class="skill">JavaScript</div>
+  <div class="skill">Responsive Design</div>
+</div>-
+<section id="about">
+<h2>About Me</h2>
+<p>My name is Hussaini. I am a beginner web developer.</p>
+</section>
+
+<section id="skills">
+<h2>My Skills</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>GitHub</li>
+</ul>
+</section>
+
+<section id="projects">
+<h2>My Projects</h2>
+<p>My personal website (this one)</p>
+</section>
+<footer>
+  <h2>Follow Me</h2>
+  <a href="https://instagram.com/username" target="_blank">Instagram</a> |
+  <a href="https://github.com/username" target="_blank">GitHub</a> |
+  <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+</footer>
+<body>
+
+<h1>Sannun ku masoya na</h1>
+<p>Sunana yaronsarigirin, ina koyar da  website creation.</p>
+<a href="https://wa.me/2349134398633">
+  <button>Contact Me</button>
+</a>
+<p>I am available for simple website projects. Contact me on WhatsApp.</p>
+<h2>Tuntube Ni</h2>
+<h2>My Projects</h2>
+<div class="projects">
+  <div class="project">
+    <h3>Project 1</h3>
+    <p>Short description of project 1.</p>
+  </div>
+  <div class="project">
+    <h3>Project 2</h3>
+    <p>Short description of project 2.</p>
+  </div>
+</div>
+<p>WhatsApp: 09134398633</p>
+<p>Email: hussainisarigirinauta@gmail.com</p>
+
+</body>
+</html>
+<head>
+<title>My First Website</title>
+<link rel="stylesheet" href="style.css">
+<h2 id="contact">Tuntube Ni</h2>
+<p>Za ka iya turo min saƙo kai tsaye a WhatsApp:</p>
+
+<a href="https://wa.me/2348128193205" target="_blank">
+  <button>Contact Me on WhatsApp</button>
+</a>
+</head>
+<h2 id="about">About Me</h2>
+<h2 id="skills">My Skills</h2>
+<h2 id="projects">My Projects</h2>
+<h2 id="contact">Tuntube Ni</h2>
+<script>
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOnScroll = () => {
+  faders.forEach(fader => {
+    const top = fader.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (top < windowHeight - 50) {
+      fader.classList.add('visible');
+    }
+  });
+};
+
+window.addEventListener('scroll', appearOnScroll);
+appearOnScroll(); // for initial load
+</script>
